@@ -1,0 +1,9 @@
+https://download.pytorch.org/whl/cpu/torch-1.13.0%2Bcpu-cp310-cp310-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.14.0%2Bcpu-cp310-cp310-linux_x86_64.whl
+Flask==1.0.2
+gunicorn == 19.9.0
+numpy
+pandas
+Pillow
+scikit-learn
+torchmetrics
