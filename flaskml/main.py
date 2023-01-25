@@ -144,7 +144,7 @@ def jsonexample():
     print(os.getcwd())
     print("TEST Hier \n \n")
     model = Resnet50_multiTaskNet().to(device) 
-    model.load_state_dict(torch.load("flaskml\multitask_resnet_nofreezedlayers_moredataaugmentation_01_0001_0001_weight_null_epoch45_2.pth"))
+    model.load_state_dict(torch.load("flaskml/multitask_resnet_nofreezedlayers_moredataaugmentation_01_0001_0001_weight_null_epoch45_2.pth"))
     prediction = predict(model, "63.jpg")
     print(prediction[3][0][0])
     Dictionary ={'artist': prediction[3][0][0] , 'artist_acc': prediction[0], 
