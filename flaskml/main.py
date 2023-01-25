@@ -15,6 +15,7 @@ from sklearn import preprocessing
 import os
 
 
+
 class customdataset():
     def __init__(self, csv_file, csv_file2, root_dir, n =None):
         if n == None:
@@ -139,8 +140,11 @@ def form_example():
 
 @app.route('/Get_Pred_Resnet50', methods=['GET'])
 def jsonexample():
+    print("TEST Hier \n \n")
+    print(os.getcwd())
+    print("TEST Hier \n \n")
     model = Resnet50_multiTaskNet().to(device) 
-    model.load_state_dict(torch.load("cnn_transfer_learning\modelsavepoints\multitask_resnet_nofreezedlayers_moredataaugmentation_01_0001_0001_weight_null_epoch45_2.pth"))
+    model.load_state_dict(torch.load("flaskml\multitask_resnet_nofreezedlayers_moredataaugmentation_01_0001_0001_weight_null_epoch45_2.pth"))
     prediction = predict(model, "63.jpg")
     print(prediction[3][0][0])
     Dictionary ={'artist': prediction[3][0][0] , 'artist_acc': prediction[0], 
