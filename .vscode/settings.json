@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/46287434-374c-4e92-bbcc-9559bbdcd6b4/AppServices/subscriptions/46287434-374c-4e92-bbcc-9559bbdcd6b4/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/FlaskPaintingAnalyzer",
+    "appService.deploySubpath": "."
+}
